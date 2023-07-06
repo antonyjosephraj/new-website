@@ -1,0 +1,512 @@
+<div className="home-layer-one">
+                {/* ============ SMALL ANIMATION BOX ================ */}
+                <div id='homeLayerTwo' className="small-animation-box">
+                    <div className="small-animation small-animation-one"></div>  
+                    <div className="small-animation small-animation-two"></div>                        
+                    <div className="small-animation small-animation-three"></div>                        
+                    <div className="small-animation small-animation-four"></div>                        
+                    <div className="small-animation small-animation-five"></div>  
+                </div>
+                <div id='homeLayerThree' className="home-layer-three">
+                    <div className="home-layer-three-box">
+
+                    </div>
+                </div>
+
+                <div id='homeLayerFour' className="home-layer-four">
+                        <div className="big-animation big-animation-one">
+                            <div class="outer"><div class="inner2"></div></div>
+                        </div>  
+                        <div className="big-animation big-animation-two"><div class="outer"><div class="inner3"></div></div>
+                            <div className="big-animation-sub">
+                                <div class="outer10"><div class="inner10"></div></div>
+                            </div>
+                            <p className="scroll-down">Scroll down</p>
+                        </div> 
+                        <div className="big-animation big-animation-three">
+                            <div class="outer"><div class="inner"></div></div>    
+                        </div>  
+                        <div className="big-animation big-animation-four">
+                            <div class="outer"><div class="inner"></div></div>    
+                        </div>  
+                        <div className="big-animation big-animation-five">
+                            <div class="outer"><div class="inner"></div></div>    
+                        </div>  
+                        <div className="big-animation big-animation-six">
+                            <div class="outer"><div class="inner"></div></div>    
+                        </div>  
+                        <div className="big-animation big-animation-seven">
+                            <div class="outer"><div class="inner"></div></div>    
+                        </div>  
+                        <div className="big-animation big-animation-eight">
+                            <div class="outer"><div class="inner3"></div></div>    
+                        </div> 
+                        <div className="big-animation big-animation-nine">
+                            <div class="outer"><div class="inner2"></div></div>    
+                        </div>  
+                </div>
+
+                <div id='homeLayerFive' className="home-layer-five">
+                    <div className="home-layer-five-box">
+                        <h1 className="home-title">Your AI-powered</h1>
+                        <h1 className="home-title1">creative Studio</h1>
+
+                        <article className="home-article mt-3">Meet Captions. The next generation of storytelling - </article>
+                        <article className="home-article">at your fingertips. Discover the power of AI </article>
+                        <article className="home-article">and create studio-grade videos in just a few taps.</article>
+                        <div className="home-image-layout mt-3">
+                            {/* <img src={homeLogo} alt="Home Page Image"  className="home-image"/> */}
+                            {/* <iframe className="home-image" src={homeVideo}></iframe> */}
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+
+            </div>
+
+
+            
+.navbar-link {
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-weight: 700 !important;
+    color: #d6d0e0 !important;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    transform: translateY(10px);
+  
+    /* opacity: 0; */
+  }
+  .navbar-link1:hover{
+    /* transform: translate3d(10px, 0%, 0px) scale3d(1, 1, 1) rotateX(50deg) rotateY(50deg) rotateZ(50deg) skew(50deg, 50deg) !important; */
+    /* color: red !important; */
+    animation: roll 0.5s;
+    /* transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    transform-style: preserve-3d; */
+  
+  }
+
+
+  <div class="menu_link _2" style="transform: translate3d(0px, 0%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg)
+  ; transform-style: preserve-3d; opacity: 0;">Blog</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inner10 {
+    position: absolute;
+    height: 25px;
+    width: 1.1px;
+    /* background-color: #A14FF3; */
+    top: 20px;
+    /* border-radius: 30%; */
+    filter: blur(.5px);
+  
+    box-shadow: 0px 2px -4px 0.1px #f8f7fa;
+    background-image: linear-gradient(to bottom, #faf9fb 90%, #d933fb 95%);
+    animation: biganimation 3s forwards 0s infinite;
+    /* z-index: 9999; */
+  
+  }
+
+
+
+  .home-layer-three-box::before {
+    top: 0px;
+    left: 10px;
+    border-top: 1.2px solid #9835F8;
+    border-left: 1.2px solid #9835F8;
+    /* transition: 0.5s all; */
+    /* display: block; */
+    content: "";
+    width: 13.5px;
+    height: 13.5px;
+    position: absolute;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    /* animation: borderanimation 3s ease-in 1s alternate infinite;
+     */
+     animation: borderanimation 5s infinite;
+     /* animation-name: borderanimation;
+     animation-duration: 3s;
+     animation-iteration-count: infinite; */
+  
+    /* z-index: -1; */
+  }
+  
+  .home-layer-three-box::after {
+    top: 0px;
+    right: 10px;
+    border-top: 1.2px solid #9835F8;
+    border-right: 1.2px solid #9835F8;
+    /* transition: 0.5s all; */
+    /* display: block; */
+    content: "";
+    width: 13.5px;
+    height: 13.5px;
+    position: absolute;
+    animation: borderanimation 5s infinite;
+  
+    /* animation-name: borderanimation;
+     animation-duration: 3s;
+     animation-iteration-count: infinite; */
+  
+  }
+  
+  .home-layer-three-box::before {
+    bottom: 0px;
+    left: 10px;
+    border-bottom: 1.2px solid #9835F8;
+    border-left: 1.2px solid #9835F8;
+    /* transition: 0.5s all; */
+    /* display: block; */
+    content: "";
+    width: 13.5px;
+    height: 13.5px;
+    position: absolute;
+    animation: borderanimation 5s infinite;
+  
+    /* animation-name: borderanimation;
+     animation-duration: 3s;
+     animation-iteration-count: infinite; */
+  
+  }
+  
+
+  
+
+
+
+  const imageSection = document.querySelectorAll('.image-section');
+  const imageContainer = document.querySelector('.image-container');
+
+
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  console.log('11111111111', scrollTop);
+
+  const windowHeight = window.innerHeight;
+  console.log('2222222222222222', windowHeight);
+
+  if (scrollTop >= 700) {
+      imageSection.classList.add('scrolled-down');
+      imageSection.classList.remove('scrolled-up');
+  } else {
+      imageSection.classList.add('scrolled-up');
+      imageSection.classList.remove('scrolled-down');
+  }
+
+
+  if (scrollTop >= 1000) {
+      imageContainer.style.transform = 'translate(-50%, -100%)';
+    } else {
+      imageContainer.style.transform = 'translate(-50%, 0)';
+    }
+
+
+
+
+
+
+    import React, { useState, useEffect } from 'react';
+    import homeVideo from '../assert/video/video1.mp4';
+    
+    
+    const One = () => {
+    
+        useEffect(() => {
+            // Aos.init();
+            const handleScroll = () => {
+                const reveals = document.querySelectorAll('.home-image');
+    
+                console.log('11111111111', reveals);
+    
+                const windowHeight = window.innerHeight;
+    
+                console.log('2222222222222222', windowHeight);
+    
+                const elementVisible = -10;
+          
+                for (let i = 0; i < reveals.length; i++) {
+                    const elementTop = reveals[i].getBoundingClientRect().top;
+    
+                console.log('3333333333', elementTop, 'dddddddddd', windowHeight - elementVisible);
+            
+                    if (elementTop < windowHeight - elementVisible) {
+                        // reveals[i].classList.add('active');
+                    } else {
+                        // reveals[i].classList.remove('active');
+                    }
+                }
+            };
+          
+            window.addEventListener('scroll', handleScroll);
+            
+            // return () => {
+            // window.removeEventListener('scroll', handleScroll);
+            // };
+        })
+    
+        return (
+            <div className="one">
+                <div className="home-image-layout ">
+                    {/* <img src={homeLogo} alt="Home Page Image"  className="home-image"/> */}
+                    <iframe className="home-image" src={homeVideo}></iframe>
+                </div>
+            </div>
+        )
+    }
+    
+    export default One;
+
+
+
+
+
+
+
+    if (scrollPosition >= 190 ){
+        let qqq = parseInt(scrollPosition) / 177;
+        imageContainer.style.transform   = 'scale('+ moveOne + ',' + qqq.toString() + ')';
+        console.log('zzzzzzzzzzzzzzzzzzzzzz', imageContainer.style.transform );
+
+    }
+
+
+    else
+
+
+
+
+    import React, { useEffect, useState } from "react";
+    import './App.css';
+    import Header from './components/Header';
+    import Home from './components/Home';
+    import One from './components/ScrollOne';
+    
+    // Bootstrap CSS
+    // import "bootstrap/dist/css/bootstrap.min.css";
+    
+    import "bootstrap/dist/css/bootstrap.min.css";
+    // Bootstrap Bundle JS
+    // import "bootstrap/dist/js/bootstrap.bundle.min";
+    
+    function App() {
+    
+        const [scrollPosition, setScrollPosition] = useState(0);
+    
+        useEffect(() => {
+    
+            const handleScroll = () => {
+                setScrollPosition(window.scrollY);
+            };
+    
+            window.addEventListener('scroll', handleScroll);
+    
+            return () => {
+                window.removeEventListener('scroll', handleScroll);
+            };
+        },  []);
+    
+        useEffect(() => {
+            const stickySection = document.querySelector('.sticky-section');
+            const windowHeight = window.innerHeight;
+            // const scrollPosition = window.scrollY;
+            console.log('-------------------windowHeight', windowHeight);
+    
+            if (scrollPosition < windowHeight) {
+                stickySection.style.position = 'sticky';
+                stickySection.style.top = '0';
+            } else {
+                stickySection.style.position = 'static';
+            }
+        })
+    
+        return (
+            <div className="ai-website">
+                <div className='sticky-section'>
+                    <Header />
+                    <Home />
+    
+                </div>
+                <div className='content-section'>
+                    <One />
+                </div>
+            </div>
+        );
+    }
+    
+    export default App;
+    
+    
+    // import logo from './logo.svg';
+    // import './App.css';
+    
+    // function App() {
+    //   return (
+    //     <div className="App">
+    //       <header className="App-header">
+    //         <img src={logo} className="App-logo" alt="logo" />
+    //         <p>
+    //           Edit <code>src/App.js</code> and save to reload.
+    //         </p>
+    //         <a
+    //           className="App-link"
+    //           href="https://reactjs.org"
+    //           target="_blank"
+    //           rel="noopener noreferrer"
+    //         >
+    //           Learn React
+    //         </a>
+    //       </header>
+    //     </div>
+    //   );
+    // }
+    
+    // export default App;
+    
+    
+    
+
+
+    if (scrollPosition >= 150){
+        let bb = parseInt(scrollPosition) - 150;
+
+        imageSection.style.transform = "translate(0%, -90%)";
+
+    }
+      else
+
+
+
+
+
+      if (scrollPosition >= 188 ){
+        // imageSection.style.transform = "translate(0%, -136%)";
+        let www = parseInt(scrollPosition) / 135;
+        let www1 = parseInt(scrollPosition) / 133;
+        let qqq = parseInt(scrollPosition) / 170;
+        imageContainer.style.transform   = 'scale('+ qqq.toString() + ',' +  moveOne + ')';
+        // console.log('zzzzzzzzzzzzzzzzzzzzzz', scrollPosition, imageContainer.style.transform );
+
+    }
+
+    else
+
+
+
+
+   <div>
+                <img src={QRCode} alt="Home Page Image"  className="home-image"/>
+            </div>  
+
+
+
+  <div className='image-section'>
+                <img src={QRCode} alt="Home Page Image"  className="qrcode-image"/>
+            </div> 
+
+
+
+
+
+    // console.log('-----------------',scrollPosition );
+
+    if (imageSection) {
+
+ if (scrollPosition > 50 && scrollPosition < 210 ) {
+        let aa = (parseInt(scrollPosition) - 50) * 0.5;
+
+        imageSection.style.transform = "translate(0%, -" + aa.toString() +"%)";
+        // console.log('1111111111', scrollPosition, '----', imageSection.style.transform, '---' ,  'translate(0% , -', aa.toString() ,'%)');
+      } else {
+        // console.log('22222222222');
+
+        // imageSection.style.transform = 'translate(0%, 0%)';
+      }
+    }
+
+    // 188 -170
+     if (scrollPosition >= 210 && scrollPosition <= 705){
+        let www = (parseInt(scrollPosition) / 187) * 0.5;
+        let www1 = (parseInt(scrollPosition) / 183) * 0.5;
+        setMoveOne(www1);
+
+        // (300 + (parseInt(scrollPosition) - 150) * 2);
+        imageContainer.style.transform   = 'scale('+ www.toString() + ',' + www1.toString() + ')';
+        // console.log('yyyyyyyyyyyyy',scrollPosition,  www, www1, '------------', imageContainer.style.transform)
+
+    } 
+
+
+ if (scrollPosition > 50 && scrollPosition < 150 ) {
+        let aa = parseInt(scrollPosition) - 50;
+
+        imageSection.style.transform = "translate(0%, -" + aa.toString() +"%)";
+        // console.log('1111111111', scrollPosition, '----', imageSection.style.transform, '---' ,  'translate(0% , -', aa.toString() ,'%)');
+      } else {
+        // console.log('22222222222');
+
+        // imageSection.style.transform = 'translate(0%, 0%)';
+      }
+    }
+
+    // 188 -170
+     if (scrollPosition >= 150 && scrollPosition <= 705){
+        let www = parseInt(scrollPosition) / 135;
+        let www1 = parseInt(scrollPosition) / 133;
+        setMoveOne(www1);
+
+        // (300 + (parseInt(scrollPosition) - 150) * 2);
+        imageContainer.style.transform   = 'scale('+ www.toString() + ',' + www1.toString() + ')';
+        // console.log('yyyyyyyyyyyyy',scrollPosition,  www, www1, '------------', imageContainer.style.transform)
+
+    } 
+
+
+
+
+else if (scrollPosition > 360 && scrollPosition <= 1705){
+        let www = (parseInt(scrollPosition) * 0.001) + 1;
+        let www1 = (parseInt(scrollPosition) * 0.0005  ) + 1;
+        console.log('JJJJJJJJJJJJJJ', www, www1);
+        setMoveOne(www1);
+
+        // (300 + (parseInt(scrollPosition) - 150) * 2);
+        imageContainer.style.transform   = 'scale('+ www.toString() + ',' + www1.toString() + ')';
+        // console.log('yyyyyyyyyyyyy',scrollPosition,  www, www1, '------------', imageContainer.style.transform)
+
+    } 
+
+
+
+let www = ((parseInt(scrollPosition) * 0.0001) + (parseInt(scrollPosition) * 0.0001)) + 1;
+        let www1 = ((parseInt(scrollPosition) * 0.0001 ) + (parseInt(scrollPosition) * 0.0001)) + 1;
+        console.log('JJJJJJJJJJJJJJ', www, www1);
+        setMoveOne(www1);
+
+        // (300 + (parseInt(scrollPosition) - 150) * 2);
+        imageContainer.style.transform   = 'scale3d('+ www.toString() + ',' + www1.toString() + ',1)';
+        console.log('yyyyyyyyyyyyy',scrollPosition,  www, www1, '------------', imageContainer.style.transform)
+
+
+translate(0%, ' + aa.toString() + '%)
+
+
+
+{/* controls allow="autoplay; controls" */}
+
+
+
+
