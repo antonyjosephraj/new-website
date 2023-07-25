@@ -31,12 +31,13 @@ const Home = () => {
 
         if (scrollPosition >= 85) {
             homeSection.style.position = 'sticky';
-            homeSection.style.top = '-4px';
+            homeSection.style.top = '-104px';
         } 
-    })
+    });
 
     return (
         <div className="home">
+
             <div className="home-layer-one">
                 <div id='homeLayerTwo' className="small-animation-box">
                     <div className="small-animation1 small-animation-one"></div>  

@@ -26,12 +26,12 @@ const AIScriptWriter = () => {
     
         if (textSection) {
 
-            if (scrollPosition > 1660) {
+            if (scrollPosition > 2100) {
 
                 const startScroll = 1660;
                 const endScroll = 2150; // 1350
                 const startY = 1;
-                const endY = -170;
+                const endY = -120;
 
 
                 var progress = (scrollPosition - startScroll) / (endScroll - startScroll);

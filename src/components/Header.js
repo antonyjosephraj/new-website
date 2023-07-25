@@ -1,11 +1,12 @@
 // import React from "react";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 
 
 const Header = () => {
 
 
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [headerClass, setHeaderClass] = useState('');
 
     const [isHovered, setIsHovered] = useState(false);
     const [isOne, setIsOne] = useState(false);
@@ -38,48 +39,66 @@ const Header = () => {
 
 
 
+//     useEffect(() => {
+//         const currentPosition = window.pageYOffset;
 
-      useEffect(() => {
-  
-          const handleScroll = () => {
-              setScrollPosition(window.scrollY);
-          };
-  
-          window.addEventListener('scroll', handleScroll);
-  
-          return () => {
-              window.removeEventListener('scroll', handleScroll);
-          };
-      },  []);
-  
-  
-      useEffect(() => {
-        //   const textSection = document.querySelector('.recording-and-production');
-  
-        //   // console.log('pppppppppppppppppp', scrollPosition);
-      
-        //   if (textSection) {
-  
-        //       if (scrollPosition > 800 && scrollPosition < 1300 ) {
-  
-        //           // console.log('aaaaaaaaaaaaaaaaaaaa', scrollPosition);
-        //           let aa = parseInt(scrollPosition) - 850;   
-        //           textSection.style.transform = "translate(0%, -" + aa.toString() +"%)";
-        //           textSection.style.opacity = '1';
-  
-        //       } else {
-        //           textSection.style.opacity = '0';
-        //       }
-          
-        //   }
-         
-          // 1035.199951171875
-        }, [scrollPosition]);
-  
+//         console.log("scrollPosition", scrollPosition, "currentPosition", currentPosition);
 
+//         if (scrollPosition == currentPosition && currentPosition > 80) {
+//             setHeaderClass('slideUp');
+//         } else if (scrollPosition > currentPosition) {
+//             setHeaderClass('slideDown');
+//         }
+//         console.log('----------------', window.scrollY);
+//         setScrollPosition(window.scrollY);
+//         console.log('------------ddd----', window.scrollY);
+
+//   }, [scrollPosition]);
+const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+const [navbarVisible, setNavbarVisible] = useState(false);
+const [doo, setDoo] = useState(0);
+
+
+
+useEffect(() => {
+
+    const headerSection = document.querySelector('.ai-header');
+
+    const handleScroll = () => {
+        const currentScrollPos = window.pageYOffset;
+
+        // console.log('---------  --------------', prevScrollPos, currentScrollPos);
+        // #100919
+        
+        if (prevScrollPos > 100){
+            if (prevScrollPos > currentScrollPos) {
+                headerSection.style.transform = "translate(0%, 0%)";
+                headerSection.style.transition = "transform 2s ease";
+                headerSection.style.backgroundColor = "#100919";
+
+            } else {
+            // Hide navbar on scroll down
+            headerSection.style.transform = "translate(0%, -100%)";
+            headerSection.style.transition = "transform 2s ease";
+            // headerSection.style.backgroundColor = "#100919";
+
+            }
+        } else{
+            headerSection.style.transform = "translate(0%, 0%)";
+            headerSection.style.backgroundColor = "transparent";
+
+        }
+        setPrevScrollPos(currentScrollPos);
+        
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+}, [prevScrollPos]);
+  
 
     return (
-        <div className="ai-header">
+        <div className={"ai-header "+ (navbarVisible ? "" : "hide-nav")}>
             <nav className="navbar navbar-light">
                 <div className="container-fluid">
                     <div className="text-white">
